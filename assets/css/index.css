@@ -1,0 +1,21 @@
+/* IDs */
+#index-banner {
+    padding: 6rem 3rem;
+    text-align: center;
+}
+    
+#index-banner-social-media-icons-container a {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+#index-banner-social-media-icons-container img {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    #index-banner {
+        padding: 3rem 1rem;
+    }
+}

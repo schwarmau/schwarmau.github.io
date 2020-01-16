@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,8 +7,30 @@
         <meta name="author" content="Austin Schwarm" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/css-reset.css" />
+        <link rel="stylesheet" href="/assets/css/global.css" />
+        <link rel="stylesheet" href="/assets/css/index.css" />
+        <link rel="stylesheet" href="/assets/css/material.css" />
+        <script src="/assets/js/global.js"></script>
     </head>
+
     <body>
+        <header>
+            <a href="/index.html" target="_self" id="home-link"><h4>Austin Schwarm</h4></a>
+            <button id="mobile-site-nav-hamburger" class="flat-button" onclick="toggleSiteNavigationMenu()"><img src="/assets/svg/hamburger-menu.svg" title="Open Navigation Menu" alt="Menu" /></button>
+            <div id="site-navbar-container" class="collapsed-right-mobile">
+                <!-- TODO: Use <nav> tag for this (maybe). -->
+                <ul id="site-navigation-menu" class="unset-list collapsed-right-mobile">
+                    <div id="mobile-site-nav-exit"><button class="flat-button" onclick="toggleSiteNavigationMenu()">&#x2715;</button></div>
+                    {% for item in site.data.site-navigation %}
+                        <!-- TODO: Add styling for currently selected item. -->
+                        <li><a href="{{ item.href }}" target="_self">{{ item.label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </header>
+        
+        <hr />
         {{ content }}
     </body>
 </html>
