@@ -1,3 +1,4 @@
+/* TODO: Extract styles that aren't actually global into their own files. */
 /* ordered by root > tags > classes > IDs > by media */
 
 :root {
