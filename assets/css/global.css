@@ -65,7 +65,7 @@ p {
         height: 1.15rem;
     }
 
-#site-navigation-menu > li.site-navigation-currently-selected-item {
+#site-navigation-menu > a.site-navigation-currently-selected-item {
     font-weight: bold;
     color: rgb(100,100,100);
     pointer-events: none;
@@ -73,18 +73,18 @@ p {
     border: 1px solid transparent;
 }
 
-#site-navigation-menu > li > a {
+#site-navigation-menu > a {
     border: 1px solid transparent;
     padding: 1px 8px;
     display: inline-block;
     color: inherit;
 }
-    #site-navigation-menu > li > a:not(:disabled):hover {
+    #site-navigation-menu > a:not(:disabled):hover {
         text-decoration: none;
         border: 1px solid rgb(50,50,50);
     }
-    #site-navigation-menu > li > a:not(:disabled):active,
-    #site-navigation-menu > li > a:not(:disabled):focus {
+    #site-navigation-menu > a:not(:disabled):active,
+    #site-navigation-menu > a:not(:disabled):focus {
         outline: none;
         border: 1px solid rgb(50,50,50);
     }
@@ -145,22 +145,20 @@ p {
         -moz-transition: right 0.5s ease-in;
         transition: right 0.5s ease-in;
     }
-        #site-navigation-menu > li {
+        #site-navigation-menu > a {
             display: block;
             padding: 10px 0;
+            border: none;
         }
-            #site-navigation-menu > li.site-navigation-currently-selected-item {
+            #site-navigation-menu > a.site-navigation-currently-selected-item {
                 font-weight: normal;
                 font-style: italic;
                 padding: 10px 8px;
             }
-            #site-navigation-menu > li > a {
+            #site-navigation-menu > a:not(:disabled):hover, 
+            #site-navigation-menu > a:not(:disabled):active, 
+            #site-navigation-menu > a:not(:disabled):focus {
                 border: none;
+                color: rgb(95,195,195);
             }
-                #site-navigation-menu > li > a:not(:disabled):hover, 
-                #site-navigation-menu > li > a:not(:disabled):active, 
-                #site-navigation-menu > li > a:not(:disabled):focus {
-                    border: none;
-                    color: rgb(95,195,195);
-                }
 }
