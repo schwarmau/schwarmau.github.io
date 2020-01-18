@@ -17,16 +17,12 @@ title: Austin Schwarm
 email: schwarmau@gmail.com
 description: >-
   This is a website all about Austin.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  jekyll
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://schwarmau.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: schwarmau
 
 # Build settings
-# TODO: Test website compatibility with GitHub Pages without the below theme and plugin.
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
