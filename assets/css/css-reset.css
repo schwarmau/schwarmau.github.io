@@ -1,9 +1,3 @@
-/* the purpose of a css reset is to eliminate unexpected default styles, and optionally replace them with better standards */
-
-/* slightly modified version of Meyer's reset.css v2.0 */
-/* removed some elements from the list of elements that receive no margin/padding/border */
-/* removed font and vertical-align from the elements blob*/
-/* removed line-height declarations and list styling as those are covered in the modified bootstrap-reboot.css */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -35,11 +29,6 @@ table {
     border-spacing: 0;
 }
 
-/* slightly modified version of boostrap-reboot.css (which is, in turn, a modified version of necolas's normalize.css) */
-/* removed all instances of padding, margins, and borders that weren't useful for distinguishing elements */
-/* removed most aesthetic assumptions that served no utilitarian purpose or will likely be overriden anyways */
-/* refactored font size declarations to have px fallbacks in addition to their rem defaults */
-/* additions to sizing and spacing presets should use px where fixed sizing/spacing is desired, or rems where dynamic sizing/spacing is desired */
 *, *::before, *::after {
     box-sizing: border-box;
 }
