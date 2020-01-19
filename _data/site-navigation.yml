@@ -1,9 +1,8 @@
-# TODO: Add these pages and fix these hrefs.
 - label: About Me
-  href: /pages/aboutme.html
+  href: /aboutme
 - label: Portfolio
-  href: /pages/portfolio.html
+  href: /portfolio
 - label: Resume
-  href: /pages/resume.html
+  href: /resume
 - label: Contact Me
-  href: /pages/contactme.html
+  href: /contactme
