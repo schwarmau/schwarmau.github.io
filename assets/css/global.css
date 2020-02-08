@@ -1,4 +1,5 @@
 /* TODO: Extract styles that aren't actually global into their own files. */
+/* TODO: Include more mobile-specific classes so not every mobile-only feature needs its own identifier. */
 /* ordered by root > tags > classes > IDs > by media */
 
 :root {

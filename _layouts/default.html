@@ -16,13 +16,12 @@
 
     <body>
         <header>
-            <a href="/" target="_self" id="home-link"><h4>Austin Schwarm</h4></a>
+            <a href="/" target="_self" id="home-link"><h4>{% if page.url != "/" %}Austin Schwarm{% endif %}</h4></a>
             <button id="mobile-site-nav-hamburger" class="flat-button" onclick="toggleSiteNavigationMenu()"><img src="/assets/svg/hamburger-menu.svg" title="Open Navigation Menu" alt="Menu" /></button>
             <div id="site-navbar-container" class="collapsed-right-mobile">
                 <nav id="site-navigation-menu" class="unset-list collapsed-right-mobile">
                     <div id="mobile-site-nav-exit"><button class="flat-button" onclick="toggleSiteNavigationMenu()">&#x2715;</button></div>
                     {% for item in site.data.site-navigation %}
-                        <!-- TODO: Add styling for currently selected item. Remove no longer relevant stylings from css assets. -->
                         <a href="{{ item.href }}" target="_self" {% if page.url == item.href %} class="site-navigation-currently-selected-item" {% endif %}>{{ item.label }}</a>
                     {% endfor %}
                 </nav>
