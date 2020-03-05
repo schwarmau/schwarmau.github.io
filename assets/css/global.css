@@ -9,9 +9,15 @@
 }
 
 body {
-    max-width: 72rem;
+    width: 65%;
+    max-width: 1080px;
     margin: 12px auto;
-    padding: 0 2em;
+    padding: 0 32px;
+}
+
+button.unstyled-button {
+    border: none;
+    background-color: unset;
 }
 
 h1 {
@@ -92,9 +98,92 @@ p {
         border: 1px solid rgb(50,50,50);
     }
 
-/* media specifics */
 @media only screen and (max-width: 1280px) {
     :root {
         font-size: 16px;
+    }
+
+    body {
+        min-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        width: 95%;
+        min-width: 360px;
+    }
+}
+
+@media only screen and (min-width: 541px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    #mobile-navigation-menu-header {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+        #mobile-navigation-menu-header > .close-button {
+            font-size: 2.8rem;
+            padding: 8px 16px;
+        }
+
+    #site-navigation-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 70%;
+        background-color: rgb(250,250,250);
+        box-shadow: 0 0 20px;
+        animation: 0.1s linear expand-width-to-70-percent;
+    }
+        #site-navigation-menu > a {
+            border: none;
+            display: block;
+            font-size: 1.5rem;
+            padding: 8px 16px;
+            margin: 4px 0;
+        }
+            #site-navigation-menu > a.currently-selected-nav-item {
+                font-weight: normal;
+                padding: 8px 16px;
+                border: none;
+                color: rgb(150,150,150);
+            }
+            #site-navigation-menu > a:not(:disabled):hover,
+            #site-navigation-menu > a:not(:disabled):active,
+            #site-navigation-menu > a:not(:disabled):focus {
+                border: none;
+            }
+
+    #site-navigation-menu-mobile-mask {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        filter: blur(4px);
+    }
+        #site-navigation-menu-mobile-mask:hover {
+            cursor: default;
+        }
+}
+
+@keyframes expand-width-to-70-percent {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
     }
 }

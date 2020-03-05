@@ -10,23 +10,31 @@
         <link rel="stylesheet" href="/assets/css/css-reset.css" />
         <link rel="stylesheet" href="/assets/css/global.css" />
         <link rel="stylesheet" href="/assets/css/index.css" />
-        <link rel="stylesheet" href="/assets/css/material.css" />
         <script src="/assets/js/global.js"></script>
     </head>
 
     <body>
         <header>
-            <!-- TODO: In mobile, change the navigation menu to be a slide-in panel. -->
             <a href="/" target="_self" id="home-link"><h4></h4></a>
-            
-            <nav id="site-navigation-menu">
+
+            <button class="mobile-only unstyled-button" style="width: 2.4rem;" onclick="openSiteNavigation()"><img src="/assets/svg/hamburger-menu.svg" title="Open Navigation" alt="Open" /></button>
+
+            <button id="site-navigation-menu-mobile-mask" class="mobile-only unstyled-button hide-on-mobile" onclick="closeSiteNavigation()"></button>
+            <nav id="site-navigation-menu" class="hide-on-mobile">
+                <div id="mobile-navigation-menu-header" class="mobile-only"><button class="unstyled-button close-button" onclick="closeSiteNavigation()">&times;</button></div>
+
                 
+                
+                    
                     <a href="/aboutme" target="_self" >About Me</a>
                 
+                    
                     <a href="/portfolio" target="_self" >Portfolio</a>
                 
+                    
                     <a href="/resume" target="_self" >Resume</a>
                 
+                    
                     <a href="/contactme" target="_self" >Contact Me</a>
                 
             </nav>
@@ -35,8 +43,7 @@
         
         <hr />
         
-        <!-- TODO: In mobile, reduce the padding/margins around the banner. Make the minimum width after, based on when the icons start to wrap. -->
-<div id="index-banner">
+        <div id="index-banner">
     <h2>Austin Schwarm</h2>
     <h5>I make things do things, on your computer and on the web.</h3>
     <div id="index-banner-icons">

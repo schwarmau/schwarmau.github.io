@@ -10,18 +10,25 @@
         <link rel="stylesheet" href="/assets/css/css-reset.css" />
         <link rel="stylesheet" href="/assets/css/global.css" />
         <link rel="stylesheet" href="/assets/css/index.css" />
-        <link rel="stylesheet" href="/assets/css/material.css" />
         <script src="/assets/js/global.js"></script>
     </head>
 
     <body>
         <header>
-            <!-- TODO: In mobile, change the navigation menu to be a slide-in panel. -->
             <a href="/" target="_self" id="home-link"><h4>{% if page.url != "/" %}Austin Schwarm{% endif %}</h4></a>
-            
-            <nav id="site-navigation-menu">
+
+            <button class="mobile-only unstyled-button" style="width: 2.4rem;" onclick="openSiteNavigation()"><img src="/assets/svg/hamburger-menu.svg" title="Open Navigation" alt="Open" /></button>
+
+            <button id="site-navigation-menu-mobile-mask" class="mobile-only unstyled-button hide-on-mobile" onclick="closeSiteNavigation()"></button>
+            <nav id="site-navigation-menu" class="hide-on-mobile">
+                <div id="mobile-navigation-menu-header" class="mobile-only"><button class="unstyled-button close-button" onclick="closeSiteNavigation()">&times;</button></div>
+
+                {% if page.url != "/" %}
+                    <a href="/" target="_self" class="mobile-only">Home</a>
+                {% endif %}
                 {% for item in site.data.site-navigation %}
-                    <a href="{{ item.href }}" target="_self" {% if page.url == item.href %} class="currently-selected-nav-item" {% endif %}>{{ item.label }}</a>
+                    {% assign itemHrefAsUrl = item.href | append: "/" %}
+                    <a href="{{ item.href }}" target="_self" {% if page.url == itemHrefAsUrl %} class="currently-selected-nav-item" {% endif %}>{{ item.label }}</a>
                 {% endfor %}
             </nav>
         </header>
