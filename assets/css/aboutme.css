@@ -1,0 +1,42 @@
+#about-me-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    padding: 0 20px;
+}
+
+#about-me-content {
+    padding-right: 40px;
+}
+    #about-me-content > p {
+        padding: 0.5rem 0;
+    }
+
+#about-me-profile-picture {
+    min-width: 200px;
+    min-height: 200px;
+    width: 18rem;
+    height: 18rem;
+    max-width: 25vw;
+    max-height: 25vw;
+    box-shadow: 6px 6px 14px rgb(40,40,40);
+}
+
+@media only screen and (max-width: 1280px) {
+    #about-me-container {
+        flex-direction: column;
+    }
+
+    #about-me-content {
+        padding-right: 0;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #about-me-container {
+        padding: 0;
+    }
+}
