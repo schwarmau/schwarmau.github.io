@@ -45,6 +45,16 @@
     box-shadow: unset;
 }
 
+.portfolio-project-label-header {
+    display: flex;
+    justify-content: space-between;
+}
+    .portfolio-project-label-header > a > img {
+        width: 1.4rem;
+        height: 1.4rem;
+        filter: grayscale(1) brightness(82%);
+    }
+
 .portfolio-project-wrapper {
     padding: 30px 15px;
     position: relative;

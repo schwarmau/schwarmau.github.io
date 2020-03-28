@@ -31,7 +31,7 @@
                 {% endif %}
                 {% for item in site.data.site-navigation %}
                     {% assign itemHrefAsUrl = item.href | append: "/" %}
-                    <a href="{{ item.href }}" target="_self" {% if page.url == itemHrefAsUrl %} class="currently-selected-nav-item" {% endif %}>{{ item.label }}</a>
+                    <a href="{{ item.href }}" {% if item.href contains "." %} target="_blank" {% else %} target="_self" {% endif %} {% if page.url == itemHrefAsUrl %} class="currently-selected-nav-item" {% endif %}>{{ item.label }}</a>
                 {% endfor %}
             </nav>
         </header>
