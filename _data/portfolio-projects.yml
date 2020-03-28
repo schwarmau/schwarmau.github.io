@@ -1,0 +1,24 @@
+- id: personal-website
+  title: Personal Website
+  image_path: /assets/images/website-screenshot.png
+  link: https://github.com/schwarmau/schwarmau.github.io
+  description: |-
+    My personal website has been my introduction to jekyll, and a chance for me to explore design outside of an enterprise environment.
+    <br />
+    It may not be as feature-rich as something made in a quarter of the time with SquareSpace, but it's minimal, it's robust, and it's mine.
+- id: personal-website2
+  title: Personal Website
+  image_path: /assets/images/website-screenshot.png
+  link: https://github.com/schwarmau/schwarmau.github.io
+  description: |-
+    My personal website has been my introduction to jekyll, and a chance for me to explore design outside of an enterprise environment.
+    <br />
+    It may not be as feature-rich as something made in a quarter of the time with SquareSpace, but it's minimal, it's robust, and it's mine.
+- id: personal-website3
+  title: Personal Website
+  image_path: /assets/images/website-screenshot.png
+  link: https://github.com/schwarmau/schwarmau.github.io
+  description: |-
+    My personal website has been my introduction to jekyll, and a chance for me to explore design outside of an enterprise environment.
+    <br />
+    It may not be as feature-rich as something made in a quarter of the time with SquareSpace, but it's minimal, it's robust, and it's mine.

@@ -1,0 +1,68 @@
+.portfolio-project-image {
+    width: 55%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    filter: brightness(0.8) grayscale(1);
+    transition: border, filter;
+    transition-duration: 0.5s;
+}
+    .portfolio-project-image:hover {
+        border: 1px solid rgb(40,40,40);
+        filter: unset;
+        box-shadow: 0 0 20px -5px rgb(40,40,40);
+    }
+
+.portfolio-project-label {
+    background-color: rgb(40,40,40);
+    color: rgb(210,210,210);
+    font-size: 0.8rem;
+    padding: 20px;
+    width: 60%;
+    height: 50%;
+    overflow: auto;
+    box-shadow: 0 0 20px -5px rgb(40,40,40);
+    position: absolute;
+    align-self: center;
+    transition: box-shadow, left, right;
+    transition-duration: 0.5s;
+}
+    .portfolio-project-label.left-aligned {
+        left: 0;
+    }
+    .portfolio-project-label.right-aligned {
+        right: 0;
+    }
+    .portfolio-project-label > p {
+        padding-top: 0.7em;
+    }
+
+.portfolio-project-label-aside.left-aligned {
+    left: calc(-15% - 1rem);
+    box-shadow: unset;
+}
+.portfolio-project-label-aside.right-aligned {
+    right: calc(-15% - 1rem);
+    box-shadow: unset;
+}
+
+.portfolio-project-wrapper {
+    padding: 30px 15px;
+    position: relative;
+    display: flex;
+}
+    .portfolio-project-wrapper.left-aligned {
+        flex-direction: row-reverse;
+    }
+    .portfolio-project-wrapper.right-aligned {
+        flex-direction: row;
+    }
+
+/* TODO: On mobile devices, only show the label, not the image, and make them appear tiled. */
+@media only screen and (max-width: 1280px) {
+    .portfolio-project-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+}

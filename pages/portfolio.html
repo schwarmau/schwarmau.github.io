@@ -1,9 +1,28 @@
 ---
 permalink: /portfolio/
 layout: default
-title: Austin Schwarm | About Me
+title: Austin Schwarm | Portfolio
 ---
 
 <p>
     This page is a work in progress.
 </p>
+
+{% assign alignment = "right" %}
+{% for item in site.data.portfolio-projects %}
+    <div class="portfolio-project-wrapper {{ alignment }}-aligned">
+        <img class="portfolio-project-image" src="{{ item.image_path }}" onmouseover="setPortfolioProjectLabelAside('portfolio-{{ item.id }}-label')" onmouseout="unsetPortfolioProjectLabelAside('portfolio-{{ item.id }}-label')" />
+        <div id="portfolio-{{ item.id }}-label" class="portfolio-project-label {{ alignment }}-aligned">
+            <h5>{{ item.title }}</h5>
+            <p>
+                {{ item.description }}
+            </p>
+        </div>
+    </div>
+
+    {% if alignment == "right" %}
+        {% assign alignment = "left" %}
+    {% else %}
+        {% assign alignment = "right" %}
+    {% endif %}
+{% endfor %}
