@@ -8,26 +8,29 @@ title: Austin Schwarm | Portfolio
     This page is a work in progress.
 </p>
 
-{% assign alignment = "right" %}
-{% for item in site.data.portfolio-projects %}
-    <div class="portfolio-project-wrapper {{ alignment }}-aligned">
-        <img class="portfolio-project-image" src="{{ item.image_path }}" onmouseover="setPortfolioProjectLabelAside('portfolio-{{ item.id }}-label')" onmouseout="unsetPortfolioProjectLabelAside('portfolio-{{ item.id }}-label')" />
-        <div id="portfolio-{{ item.id }}-label" class="portfolio-project-label {{ alignment }}-aligned">
-            <div class="portfolio-project-label-header">
-                <h5>{{ item.title }}</h5>
-                <a href="{{ item.link }}" target="_blank"><img class="portfolio-project-label-header-link-icon" src="/assets/svg/external-link.svg" /></a>
+<div id="portfolio-container">
+    {% assign alignment = "right" %}
+    {% for item in site.data.portfolio-projects %}
+        <div class="portfolio-project-wrapper {{ alignment }}-aligned">
+            <img class="portfolio-project-image" src="{{ item.image_path }}" onmouseover="setPortfolioProjectLabelAside('portfolio-{{ item.id }}-label')" onmouseout="unsetPortfolioProjectLabelAside('portfolio-{{ item.id }}-label')" />
+            <div id="portfolio-{{ item.id }}-label" class="portfolio-project-label {{ alignment }}-aligned">
+                <div class="portfolio-project-label-header">
+                    <h5>{{ item.title }}</h5>
+                    <a href="{{ item.link }}" target="_blank"><img class="portfolio-project-label-header-link-icon" src="/assets/svg/external-link.svg" /></a>
+                </div>
+                <div>
+                    {{ item.description }}
+                </div>
             </div>
-            <p>
-                {{ item.description }}
-            </p>
         </div>
-    </div>
-
-    <!-- TODO: Add tags to the labels (e.g. #html, #css, #javascript, #jekyll, #git) -->
-
-    {% if alignment == "right" %}
-        {% assign alignment = "left" %}
-    {% else %}
-        {% assign alignment = "right" %}
-    {% endif %}
-{% endfor %}
+    
+        <!-- TODO: Add tags to the labels (e.g. #html, #css, #javascript, #jekyll, #git) -->
+        <!-- TODO: Update scrolling in labels -->
+    
+        {% if alignment == "right" %}
+            {% assign alignment = "left" %}
+        {% else %}
+            {% assign alignment = "right" %}
+        {% endif %}
+    {% endfor %}
+</div>

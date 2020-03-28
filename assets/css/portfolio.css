@@ -16,7 +16,7 @@
     background-color: rgb(40,40,40);
     color: rgb(210,210,210);
     font-size: 0.8rem;
-    padding: 20px;
+    padding: 15px 20px;
     width: 60%;
     height: 50%;
     overflow: auto;
@@ -67,12 +67,40 @@
         flex-direction: row;
     }
 
-/* TODO: On mobile devices, only show the label, not the image, and make them appear tiled. */
 @media only screen and (max-width: 1280px) {
+    #portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     .portfolio-project-image {
         display: none;
     }
+
+    .portfolio-project-label {
+        width: unset;
+        height: unset;
+        box-shadow: unset;
+        position: unset;
+        left: unset;
+        right: unset;
+        align-self: unset;
+        transition: unset;
+    }
+
+    .portfolio-project-wrapper {
+        display: block;
+        padding: 30px 10px;
+        width: 50%;
+    }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 1090px) {
+    .portfolio-project-wrapper {
+        display: block;
+        padding: 0;
+        padding-top: 30px;
+        width: 100%;
+    }
 }
