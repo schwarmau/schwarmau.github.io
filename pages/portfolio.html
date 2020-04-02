@@ -21,10 +21,14 @@ title: Austin Schwarm | Portfolio
                 <div>
                     {{ item.description }}
                 </div>
+                <div class="portfolio-project-label-tags">
+                    {% for tag in item.tags %}
+                    <span>#{{ tag }}</span>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-    
-        <!-- TODO: Add tags to the labels (e.g. #html, #css, #javascript, #jekyll, #git) -->
+        
         <!-- TODO: Update scrolling in labels -->
     
         {% if alignment == "right" %}
