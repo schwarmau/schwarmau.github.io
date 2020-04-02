@@ -16,6 +16,10 @@
         <script src="/assets/js/portfolio.js"></script>
         <script type="text/javascript">
             // this is part of handling the flash of unstyled content (FOUC)
+            if (sessionStorage.getItem("theme") === null) {
+                sessionStorage.setItem("theme", "light");
+            }
+
             switch(sessionStorage.getItem("theme").toLowerCase()) {
                 case 'dark':
                     document.documentElement.style.setProperty("background-color", "rgb(55,55,55)");
