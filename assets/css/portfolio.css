@@ -1,6 +1,7 @@
 :root {
     --portfolio-project-label-background-color: rgb(40,40,40);
     --portfolio-project-label-color: rgb(210,210,210);
+    --portfolio-project-label-link-brightness: 82%;
 }
 
 .portfolio-project-image {
@@ -57,7 +58,7 @@
     .portfolio-project-label-header > a > img {
         width: 1.4rem;
         height: 1.4rem;
-        filter: grayscale(1) brightness(82%);
+        filter: grayscale(1) brightness(var(--portfolio-project-label-link-brightness));
     }
 
 .portfolio-project-label-tags {
@@ -84,9 +85,8 @@
 
 @media only screen and (max-width: 1280px) {
     #portfolio-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .portfolio-project-image {
@@ -106,16 +106,12 @@
 
     .portfolio-project-wrapper {
         display: block;
-        padding: 30px 10px;
-        width: 50%;
+        padding: 30px 10px 0 10px;
     }
 }
 
 @media only screen and (max-width: 1090px) {
-    .portfolio-project-wrapper {
-        display: block;
-        padding: 0;
-        padding-top: 30px;
-        width: 100%;
+    #portfolio-container {
+        grid-template-columns: auto;
     }
 }

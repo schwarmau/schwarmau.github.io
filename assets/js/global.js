@@ -50,6 +50,9 @@ function applyDarkTheme() {
     document.documentElement.style.setProperty("--selected-menu-items-color", "rgb(140,140,140)");
     document.documentElement.style.setProperty("--mobile-menu-color", "rgb(40,40,40)");
     document.documentElement.style.setProperty("--mobile-selected-menu-items-color", "rgb(0,110,150)");
+    document.documentElement.style.setProperty("--portfolio-project-label-background-color", "rgb(20,20,20)");
+    document.documentElement.style.setProperty("--portfolio-project-label-color", "rgb(180,180,180)");
+    document.documentElement.style.setProperty("--portfolio-project-label-link-brightness", "61%");
     sessionStorage.setItem("theme", "dark");
 }
 
@@ -59,5 +62,8 @@ function applyLightTheme() {
     document.documentElement.style.setProperty("--selected-menu-items-color", "rgb(100,100,100)");
     document.documentElement.style.setProperty("--mobile-menu-color", "rgb(250,250,250)");
     document.documentElement.style.setProperty("--mobile-selected-menu-items-color", "rgb(150,150,150)");
+    document.documentElement.style.setProperty("--portfolio-project-label-background-color", "rgb(40,40,40)");
+    document.documentElement.style.setProperty("--portfolio-project-label-color", "rgb(210,210,210)");
+    document.documentElement.style.setProperty("--portfolio-project-label-link-brightness", "82%");
     sessionStorage.setItem("theme", "light");
 }

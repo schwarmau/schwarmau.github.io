@@ -12,3 +12,59 @@
     - html
     - css
     - javascript
+- id: personal-website2
+  title: Personal Website
+  image_path: /assets/images/website-screenshot.png
+  link: https://github.com/schwarmau/schwarmau.github.io
+  description: |-
+    My personal website has been my introduction to jekyll, and a chance for me to explore design outside of an enterprise environment.
+    <br />
+    It may not be very feature-rich, but it's minimal, it's robust, and it's mine.
+  tags:
+    - jekyll
+    - git
+    - html
+    - css
+    - javascript
+- id: personal-website3
+  title: Personal Website
+  image_path: /assets/images/website-screenshot.png
+  link: https://github.com/schwarmau/schwarmau.github.io
+  description: |-
+    My personal website has been my introduction to jekyll, and a chance for me to explore design outside of an enterprise environment.
+    <br />
+    It may not be very feature-rich, but it's minimal, it's robust, and it's mine.
+  tags:
+    - jekyll
+    - git
+    - html
+    - css
+    - javascript
+- id: personal-website4
+  title: Personal Website
+  image_path: /assets/images/website-screenshot.png
+  link: https://github.com/schwarmau/schwarmau.github.io
+  description: |-
+    My personal website has been my introduction to jekyll, and a chance for me to explore design outside of an enterprise environment.
+    <br />
+    It may not be very feature-rich, but it's minimal, it's robust, and it's mine.
+  tags:
+    - jekyll
+    - git
+    - html
+    - css
+    - javascript
+- id: personal-website5
+  title: Personal Website
+  image_path: /assets/images/website-screenshot.png
+  link: https://github.com/schwarmau/schwarmau.github.io
+  description: |-
+    My personal website has been my introduction to jekyll, and a chance for me to explore design outside of an enterprise environment.
+    <br />
+    It may not be very feature-rich, but it's minimal, it's robust, and it's mine.
+  tags:
+    - jekyll
+    - git
+    - html
+    - css
+    - javascript
