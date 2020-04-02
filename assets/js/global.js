@@ -46,8 +46,8 @@ function applyTheme() {
 
 function applyDarkTheme() {
     document.documentElement.style.setProperty("--primary-background-color", "rgb(55,55,55)");
-    document.documentElement.style.setProperty("--primary-color", "rgb(0,170,185)");
-    document.documentElement.style.setProperty("--selected-menu-items-color", "rgb(0,110,150)");
+    document.documentElement.style.setProperty("--primary-color", "rgb(190,190,190)");
+    document.documentElement.style.setProperty("--selected-menu-items-color", "rgb(140,140,140)");
     document.documentElement.style.setProperty("--mobile-menu-color", "rgb(40,40,40)");
     document.documentElement.style.setProperty("--mobile-selected-menu-items-color", "rgb(0,110,150)");
     sessionStorage.setItem("theme", "dark");
