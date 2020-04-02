@@ -1,3 +1,8 @@
+:root {
+    --portfolio-project-label-background-color: rgb(40,40,40);
+    --portfolio-project-label-color: rgb(210,210,210);
+}
+
 .portfolio-project-image {
     width: 55%;
     border: 1px solid transparent;
@@ -7,20 +12,20 @@
     transition-duration: 0.5s;
 }
     .portfolio-project-image:hover {
-        border: 1px solid rgb(40,40,40);
+        border: 1px solid var(--portfolio-project-label-background-color);
         filter: unset;
-        box-shadow: 0 0 20px -5px rgb(40,40,40);
+        box-shadow: 0 0 20px -5px var(--shadow-color);
     }
 
 .portfolio-project-label {
-    background-color: rgb(40,40,40);
-    color: rgb(210,210,210);
+    background-color: var(--portfolio-project-label-background-color);
+    color: var(--portfolio-project-label-color);
     font-size: 0.8rem;
     padding: 15px 20px;
     width: 60%;
     max-height: 75%;
     overflow: auto;
-    box-shadow: 0 0 20px -5px rgb(40,40,40);
+    box-shadow: 0 0 20px -5px var(--shadow-color);
     position: absolute;
     align-self: center;
     transition: box-shadow, left, right;
@@ -59,7 +64,7 @@
     text-align: right;
     font-size: 0.7rem;
     font-style: italic;
-    color: rgba(210,210,210,0.8);
+    opacity: 0.8;
 }
     .portfolio-project-label-tags > span  {
         padding-left: 0.5em;

@@ -21,7 +21,7 @@
     height: 18rem;
     max-width: 25vw;
     max-height: 25vw;
-    box-shadow: 6px 6px 14px rgb(40,40,40);
+    box-shadow: 6px 6px 14px var(--shadow-color);
 }
 
 #about-me-profile-picture-wrapper {
