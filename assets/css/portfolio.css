@@ -90,7 +90,7 @@
 
     .portfolio-project-label {
         width: unset;
-        height: unset;
+        max-height: unset;
         box-shadow: unset;
         position: unset;
         left: unset;
