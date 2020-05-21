@@ -1,16 +1,7 @@
 window.onload = function() {
     document.documentElement.classList.add("loaded");
     document.documentElement.style.removeProperty("background-color");
-    switch(this.sessionStorage.getItem("theme").toLowerCase()) {
-        case 'dark':
-            this.applyDarkTheme();
-            break;
-        case 'light':
-            this.applyLightTheme();
-            break;
-        default:
-            break;
-    }
+    applyTheme();
 }
 
 function closeSiteNavigation() {
@@ -34,36 +25,12 @@ function toggleTheme() {
 function applyTheme() {
     switch(sessionStorage.getItem("theme").toLowerCase()) {
         case 'dark':
-            this.applyDarkTheme();
+            document.documentElement.setAttribute("ui-theme", "dark");
             break;
         case 'light':
-            this.applyLightTheme();
+            document.documentElement.setAttribute("ui-theme", "light");
             break;
         default:
             break;
     }
-}
-
-function applyDarkTheme() {
-    document.documentElement.style.setProperty("--primary-background-color", "rgb(55,55,55)");
-    document.documentElement.style.setProperty("--primary-color", "rgb(190,190,190)");
-    document.documentElement.style.setProperty("--selected-menu-items-color", "rgb(140,140,140)");
-    document.documentElement.style.setProperty("--mobile-menu-color", "rgb(40,40,40)");
-    document.documentElement.style.setProperty("--mobile-selected-menu-items-color", "rgb(0,110,150)");
-    document.documentElement.style.setProperty("--portfolio-project-label-background-color", "rgb(20,20,20)");
-    document.documentElement.style.setProperty("--portfolio-project-label-color", "rgb(180,180,180)");
-    document.documentElement.style.setProperty("--portfolio-project-label-link-brightness", "61%");
-    sessionStorage.setItem("theme", "dark");
-}
-
-function applyLightTheme() {
-    document.documentElement.style.setProperty("--primary-background-color", "rgb(245,245,245)");
-    document.documentElement.style.setProperty("--primary-color", "rgb(50,50,50)");
-    document.documentElement.style.setProperty("--selected-menu-items-color", "rgb(100,100,100)");
-    document.documentElement.style.setProperty("--mobile-menu-color", "rgb(250,250,250)");
-    document.documentElement.style.setProperty("--mobile-selected-menu-items-color", "rgb(150,150,150)");
-    document.documentElement.style.setProperty("--portfolio-project-label-background-color", "rgb(40,40,40)");
-    document.documentElement.style.setProperty("--portfolio-project-label-color", "rgb(210,210,210)");
-    document.documentElement.style.setProperty("--portfolio-project-label-link-brightness", "82%");
-    sessionStorage.setItem("theme", "light");
 }

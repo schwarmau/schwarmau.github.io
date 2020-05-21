@@ -4,6 +4,12 @@
     --portfolio-project-label-link-brightness: 82%;
 }
 
+:root[ui-theme='dark'] {
+    --portfolio-project-label-background-color: rgb(20,20,20);
+    --portfolio-project-label-color: rgb(180,180,180);
+    --portfolio-project-label-link-brightness: 61%;
+}
+
 .portfolio-project-image {
     width: 55%;
     border: 1px solid transparent;

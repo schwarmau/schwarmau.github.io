@@ -10,6 +10,14 @@
     color: var(--primary-color);
 }
 
+:root[ui-theme='dark'] {
+    --primary-background-color: rgb(55,55,55);
+    --primary-color: rgb(190,190,190);
+    --selected-menu-items-color: rgb(140,140,140);
+    --mobile-menu-color: rgb(40,40,40);
+    --mobile-selected-menu-items-color: rgb(0,110,150);
+}
+
 body {
     width: 65%;
     max-width: 1080px;
