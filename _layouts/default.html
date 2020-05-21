@@ -51,8 +51,15 @@
                     {% assign itemHrefAsUrl = item.href | append: "/" %}
                     <a href="{{ item.href }}" {% if item.href contains "." %} target="_blank" {% else %} target="_self" {% endif %} {% if page.url == itemHrefAsUrl %} class="currently-selected-nav-item" {% endif %}>{{ item.label }}</a>
                 {% endfor %}
-
-                <button id="theme-toggle" class="unstyled-button" onclick="toggleTheme()">Toggle Dark Mode</button>
+                
+                <label id="theme-toggle" class="toggle-switch">
+                    <input type="checkbox" onchange="toggleTheme()">
+                    <span class="toggle-slider">
+                        <img class="toggle-unchecked-icon" src="/assets/svg/sun.svg" title="Light Theme" alt="Sun">
+                        <img class="toggle-checked-icon" src="/assets/svg/moon.svg" title="Dark Theme" alt="Moon">
+                        <span class="toggle-slider-knob"></span>
+                    </span>
+                </label>
             </nav>
         </header>
         

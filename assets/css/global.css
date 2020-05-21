@@ -9,14 +9,13 @@
     background-color: var(--primary-background-color);
     color: var(--primary-color);
 }
-
-:root[ui-theme='dark'] {
-    --primary-background-color: rgb(55,55,55);
-    --primary-color: rgb(190,190,190);
-    --selected-menu-items-color: rgb(140,140,140);
-    --mobile-menu-color: rgb(40,40,40);
-    --mobile-selected-menu-items-color: rgb(0,110,150);
-}
+    :root[ui-theme='dark'] {
+        --primary-background-color: rgb(55,55,55);
+        --primary-color: rgb(190,190,190);
+        --selected-menu-items-color: rgb(140,140,140);
+        --mobile-menu-color: rgb(40,40,40);
+        --mobile-selected-menu-items-color: rgb(0,110,150);
+    }
 
 body {
     width: 65%;
@@ -88,6 +87,56 @@ html {
 p {
     line-height: 1.6em;
 }
+
+.toggle-switch {
+    display: inline-block;
+    width: 2.5rem;
+    height: 1.25rem;
+}
+    .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .toggle-switch > .toggle-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        border-radius: 1.25rem;
+    }
+        .toggle-switch > .toggle-slider > .toggle-checked-icon {
+            position: absolute;
+            height: 0.9rem;
+            width: 0.9rem;
+            left: 0.25rem;
+            bottom: 0.175rem;
+        }
+        .toggle-switch > .toggle-slider > .toggle-slider-knob {
+            position: absolute;
+            height: 1.1rem;
+            width: 1.1rem;
+            bottom: 0.075rem;
+            background-color: var(--primary-background-color);
+            border-radius: 50%;
+            transition: left 0.2s;
+        }
+            .toggle-switch > input:not(:checked) ~ .toggle-slider > .toggle-slider-knob {
+                left: 0.1rem;
+            }
+            .toggle-switch > input:checked ~ .toggle-slider > .toggle-slider-knob {
+                left: 1.3rem;
+            }
+        .toggle-switch > .toggle-slider > .toggle-unchecked-icon {
+            position: absolute;
+            height: 0.9rem;
+            width: 0.9rem;
+            right: 0.25rem;
+            bottom: 0.175rem;
+        }
     
 #home-link {
     text-decoration: none;
@@ -118,21 +167,21 @@ p {
     }
 
 #theme-toggle {
-    color: var(--primary-color);
     position: absolute;
     z-index: 10;
-    font-size: 0.8rem;
     right: 0;
-    bottom: -2.6rem;
-    padding: 0 4px;
-    border: 1px solid var(--primary-color);
-    transition: background-color, color;
-    transition-duration: 0.25s;
+    bottom: -2.75rem;
 }
-        #theme-toggle:hover {
-        background-color: var(--primary-color);
-        color: var(--primary-background-color);
+    #theme-toggle > .toggle-slider > .toggle-slider-knob {
+        left: unset;
+        transition: right 0.2s;
     }
+        [ui-theme='dark'] #theme-toggle > .toggle-slider > .toggle-slider-knob {
+            right: 0.1rem;
+        }
+        [ui-theme='light'] #theme-toggle > .toggle-slider > .toggle-slider-knob {
+            right: 1.3rem;
+        }
 
 @media only screen and (max-width: 1280px) {
     :root {

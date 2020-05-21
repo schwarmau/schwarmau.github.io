@@ -28,7 +28,7 @@ function applyTheme() {
             document.documentElement.setAttribute("ui-theme", "dark");
             break;
         case 'light':
-            document.documentElement.setAttribute("ui-theme", "light");
+            document.documentElement.setAttribute("ui-theme", "light");;
             break;
         default:
             break;

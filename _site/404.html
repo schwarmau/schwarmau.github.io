@@ -57,8 +57,15 @@
                     
                     <a href="/assets/pdf/resume.pdf"  target="_blank"  >Resume</a>
                 
-
-                <button id="theme-toggle" class="unstyled-button" onclick="toggleTheme()">Toggle Dark Mode</button>
+                
+                <label id="theme-toggle" class="toggle-switch">
+                    <input type="checkbox" onchange="toggleTheme()">
+                    <span class="toggle-slider">
+                        <img class="toggle-unchecked-icon" src="/assets/svg/sun.svg" title="Light Theme" alt="Sun">
+                        <img class="toggle-checked-icon" src="/assets/svg/moon.svg" title="Dark Theme" alt="Moon">
+                        <span class="toggle-slider-knob"></span>
+                    </span>
+                </label>
             </nav>
         </header>
         
