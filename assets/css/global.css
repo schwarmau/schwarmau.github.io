@@ -9,7 +9,7 @@
     background-color: var(--primary-background-color);
     color: var(--primary-color);
 }
-    :root[ui-theme='dark'] {
+    :root[data-ui-theme='dark'] {
         --primary-background-color: rgb(55,55,55);
         --primary-color: rgb(190,190,190);
         --selected-menu-items-color: rgb(140,140,140);
@@ -176,10 +176,10 @@ p {
         left: unset;
         transition: right 0.2s;
     }
-        [ui-theme='dark'] #theme-toggle > .toggle-slider > .toggle-slider-knob {
+        [data-ui-theme='dark'] #theme-toggle > .toggle-slider > .toggle-slider-knob {
             right: 0.1rem;
         }
-        [ui-theme='light'] #theme-toggle > .toggle-slider > .toggle-slider-knob {
+        [data-ui-theme='light'] #theme-toggle > .toggle-slider > .toggle-slider-knob {
             right: 1.3rem;
         }
 
