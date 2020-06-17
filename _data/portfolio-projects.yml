@@ -12,3 +12,32 @@
     - html
     - css
     - javascript
+- id: study-guide
+  title: Study Guide
+  image_path: /assets/images/study-guide-screenshot.png
+  link: https://github.com/schwarmau/study-guide
+  description: |-
+    I've created a study guide for software engineering interviews! It's primarily markdown compiled and built with the rust-made mdbook tool. I'm constantly updating it as I become more experienced, so keep an eye out!
+  tags:
+    - markdown
+    - git
+- id: flix
+  title: Flix
+  image_path: /assets/images/flix-screenshot.png
+  link: https://github.com/schwarmau/flix
+  description: |-
+    I'm creating a movie streaming service to watch movies with my friends. For now this is just a fork of another movie streaming project built with Go, but I plan to rewrite this in python and design around the HLS protocol.
+  tags:
+    - go
+    - python
+    - git
+- id: pleroma
+  title: Pleroma
+  image_path: /assets/images/pleroma-screenshot.png
+  link: https://github.com/schwarmau/pleroma
+  description: |-
+    Pleroma is a server and frontend for <a href="https://the-federation.info/">The Federation</a> (you may already be familiar with an alternative project known as Mastodon). I have not yet begun contributing to the server code, although I have created a dockerfile to containerize it, and I am redesigning the frontend to my liking (not for contribution). Eventually the final product will be deployed and available at pleroma.cyborg.cafe!
+  tags:
+    - elixir
+    - postgresSQL
+    - git
