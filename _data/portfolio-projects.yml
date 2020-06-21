@@ -41,3 +41,14 @@
     - elixir
     - postgresSQL
     - git
+- id: blazor-extensions
+  title: Blazor Extensions
+  image_path: /assets/images/blazor-screenshot.png
+  link: https://github.com/schwarmau
+  description: |-
+    These are a series of 3 extensions for <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a>. <a href="https://github.com/schwarmau/Blazor.Redux">One to implement redux</a>, <a href="https://github.com/schwarmau/Blazor.Canvas">one to wrap the HTML5 canvas API</a>, and <a href="https://github.com/schwarmau/Blazor.Storage">one to wrap the browser storage API</a>. These have since been abandoned because I don't have the capacity to maintain them, and old alternatives have gotten better in addition to new alternatives popping up.
+  tags:
+    - C#
+    - ASP.NET
+    - blazor
+    - git
