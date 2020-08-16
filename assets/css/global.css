@@ -1,10 +1,11 @@
 :root {
     --primary-background-color: rgb(245,245,245);
     --primary-color: rgb(50,50,50);
-    --selected-menu-items-color: rgb(100,100,100);
     --mobile-menu-color: rgb(250,250,250);
     --mobile-selected-menu-items-color: rgb(150,150,150);
+    --selected-menu-items-color: rgb(100,100,100);
     --shadow-color: rgb(40,40,40);
+    --visited-hyperlinks-color: rgb(160, 0, 235);
     font-size: 18px;
     background-color: var(--primary-background-color);
     color: var(--primary-color);
@@ -12,10 +13,15 @@
     :root[data-ui-theme='dark'] {
         --primary-background-color: rgb(55,55,55);
         --primary-color: rgb(190,190,190);
-        --selected-menu-items-color: rgb(140,140,140);
         --mobile-menu-color: rgb(40,40,40);
         --mobile-selected-menu-items-color: rgb(0,110,150);
+        --selected-menu-items-color: rgb(140,140,140);
+        --visited-hyperlinks-color: rgb(211, 41, 245);
     }
+
+a:visited {
+    color: var(--visited-hyperlinks-color);
+}
 
 body {
     width: 65%;

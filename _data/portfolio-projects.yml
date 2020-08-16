@@ -36,7 +36,7 @@
   image_path: /assets/images/pleroma-screenshot.png
   link: https://github.com/schwarmau/pleroma
   description: |-
-    Pleroma is a server and frontend for <a href="https://the-federation.info/">The Federation</a> (you may already be familiar with an alternative project known as Mastodon). I have not yet begun contributing to the server code, although I have created a dockerfile to containerize it, and I am redesigning the frontend to my liking (not for contribution). Eventually the final product will be deployed and available at pleroma.cyborg.cafe!
+    Pleroma is a server and frontend for <a href="https://the-federation.info/">The Federation</a> (you may already be familiar with an alternative project known as Mastodon). I have not yet begun contributing to the server code, although I have created a dockerfile to containerize it, and I am redesigning the frontend to my liking. Eventually the final product will be deployed and available at pleroma.cyborg.cafe!
   tags:
     - elixir
     - postgresSQL
