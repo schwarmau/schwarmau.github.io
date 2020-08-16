@@ -5,6 +5,7 @@
     --mobile-selected-menu-items-color: rgb(150,150,150);
     --selected-menu-items-color: rgb(100,100,100);
     --shadow-color: rgb(40,40,40);
+    --unvisited-hyperlinks-color: rgb(0, 0, 238);
     --visited-hyperlinks-color: rgb(160, 0, 235);
     font-size: 18px;
     background-color: var(--primary-background-color);
@@ -16,12 +17,16 @@
         --mobile-menu-color: rgb(40,40,40);
         --mobile-selected-menu-items-color: rgb(0,110,150);
         --selected-menu-items-color: rgb(140,140,140);
+        --unvisited-hyperlinks-color: rgb(0, 50, 230);
         --visited-hyperlinks-color: rgb(211, 41, 245);
     }
 
-a:visited {
-    color: var(--visited-hyperlinks-color);
+a {
+    color: var(--unvisited-hyperlinks-color);
 }
+    a:visited {
+        color: var(--visited-hyperlinks-color);
+    }
 
 body {
     width: 65%;
