@@ -46,9 +46,12 @@
     .portfolio-project-label > p {
         padding-top: 0.7em;
     }
-    .portfolio-project-label > div > a:visited {
-        color: rgb(211, 41, 245);
+    .portfolio-project-label > div > a {
+        color: rgb(0, 50, 230);
     }
+        .portfolio-project-label > div > a:visited {
+            color: rgb(211, 41, 245);
+        }
 
 .portfolio-project-label-aside.left-aligned {
     left: calc(-15% - 1rem);
