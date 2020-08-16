@@ -3,12 +3,11 @@
     --portfolio-project-label-color: rgb(210,210,210);
     --portfolio-project-label-link-brightness: 82%;
 }
-
-:root[data-ui-theme='dark'] {
-    --portfolio-project-label-background-color: rgb(20,20,20);
-    --portfolio-project-label-color: rgb(180,180,180);
-    --portfolio-project-label-link-brightness: 61%;
-}
+    :root[data-ui-theme='dark'] {
+        --portfolio-project-label-background-color: rgb(20,20,20);
+        --portfolio-project-label-color: rgb(180,180,180);
+        --portfolio-project-label-link-brightness: 61%;
+    }
 
 .portfolio-project-image {
     width: 55%;
@@ -46,6 +45,9 @@
     }
     .portfolio-project-label > p {
         padding-top: 0.7em;
+    }
+    .portfolio-project-label a:visited {
+        color: rgb(211, 41, 245);
     }
 
 .portfolio-project-label-aside.left-aligned {
