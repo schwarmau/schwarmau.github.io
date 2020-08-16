@@ -46,7 +46,7 @@
     .portfolio-project-label > p {
         padding-top: 0.7em;
     }
-    .portfolio-project-label a:visited {
+    .portfolio-project-label > div > a:visited {
         color: rgb(211, 41, 245);
     }
 
