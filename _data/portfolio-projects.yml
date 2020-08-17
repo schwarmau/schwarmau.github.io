@@ -17,7 +17,7 @@
   image_path: /assets/images/study-guide-screenshot.png
   link: https://github.com/schwarmau/study-guide
   description: |-
-    I've created a study guide for software engineering interviews, with some help from friends. It's primarily markdown compiled and built with the rust-made mdbook tool. I'm constantly updating it as I become more experienced, so keep an eye out!
+    I've created a <a href="/studyguide/index.html">study guide</a> for software engineering interviews, with some help from friends. It's primarily markdown compiled and built with the rust-made mdbook tool. I'm constantly updating it as I become more experienced, so keep an eye out!
   tags:
     - markdown
     - git
