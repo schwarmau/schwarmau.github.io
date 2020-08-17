@@ -17,7 +17,7 @@
   image_path: /assets/images/study-guide-screenshot.png
   link: https://github.com/schwarmau/study-guide
   description: |-
-    I've created a study guide for software engineering interviews! It's primarily markdown compiled and built with the rust-made mdbook tool. I'm constantly updating it as I become more experienced, so keep an eye out!
+    I've created a study guide for software engineering interviews, with some help from friends. It's primarily markdown compiled and built with the rust-made mdbook tool. I'm constantly updating it as I become more experienced, so keep an eye out!
   tags:
     - markdown
     - git
@@ -36,7 +36,7 @@
   image_path: /assets/images/pleroma-screenshot.png
   link: https://github.com/schwarmau/pleroma
   description: |-
-    Pleroma is a server and frontend for <a href="https://the-federation.info/">The Federation</a> (you may already be familiar with an alternative project known as Mastodon). I have not yet begun contributing to the server code, although I have created a dockerfile to containerize it, and I am redesigning the frontend to my liking. Eventually the final product will be deployed and available at pleroma.cyborg.cafe!
+    Pleroma is a server and frontend for <a href="https://the-federation.info/">The Federation</a> (you may already be familiar with an alternative project known as Mastodon). I have started creating a dockerfile to containerize it, and I am redesigning the frontend to my liking. Eventually the final product will be deployed and available at pleroma.cyborg.cafe!
   tags:
     - elixir
     - postgresSQL
@@ -46,7 +46,7 @@
   image_path: /assets/images/blazor-screenshot.png
   link: https://github.com/schwarmau
   description: |-
-    These are a series of 3 extensions for <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a>. <a href="https://github.com/schwarmau/Blazor.Redux">One to implement redux</a>, <a href="https://github.com/schwarmau/Blazor.Canvas">one to wrap the HTML5 canvas API</a>, and <a href="https://github.com/schwarmau/Blazor.Storage">one to wrap the browser storage API</a>. These have since been abandoned because I don't have the capacity to maintain them, and old alternatives have gotten better in addition to new alternatives popping up.
+    These are a series of 3 extensions for <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a>. <a href="https://github.com/schwarmau/Blazor.Redux">One</a> to implement redux, <a href="https://github.com/schwarmau/Blazor.Canvas">one</a> to wrap the HTML5 canvas API, and <a href="https://github.com/schwarmau/Blazor.Storage">one</a> to wrap the browser storage API. These have since been abandoned because I don't have the capacity to maintain them, and old alternatives have gotten better in addition to new alternatives popping up.
   tags:
     - C#
     - ASP.NET
