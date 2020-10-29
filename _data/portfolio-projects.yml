@@ -64,7 +64,7 @@
     - mysql
 - id: restaurant-locator
   title: Restaurant Locator
-  image_path: /assets/images/restaurant-locator.jpg
+  image_path: /assets/images/restaurant-locator.png
   link: https://github.com/schwarmau
   description: |-
     One of my first big projects in college was to create an app with a classmate to accept user input about restaurant preferences and present a list of restaurants nearby that fit the criteria using Google Maps APIs. 
