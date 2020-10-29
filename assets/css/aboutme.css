@@ -20,7 +20,8 @@
     min-width: 200px;
     min-height: 200px;
     width: 18rem;
-    height: 18rem;
+    /* height: 18rem; */
+    height: 26rem;
     max-width: 25vw;
     max-height: 25vw;
     box-shadow: 6px 6px 14px var(--shadow-color);
