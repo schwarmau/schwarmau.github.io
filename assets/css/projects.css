@@ -9,6 +9,10 @@
         --portfolio-project-label-link-brightness: 61%;
     }
 
+#portfolio-container {
+    padding-top: 12px;
+}
+
 .portfolio-project-image {
     width: 55%;
     border: 1px solid transparent;
