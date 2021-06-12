@@ -1,6 +1,4 @@
-- label: About Me
-  href: /aboutme
-- label: Portfolio
-  href: /portfolio
+- label: Projects
+  href: /projects
 - label: Resume
   href: /assets/pdf/resume.pdf
