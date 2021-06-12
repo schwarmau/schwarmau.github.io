@@ -12,15 +12,6 @@
     - html
     - css
     - javascript
-- id: study-guide
-  title: Study Guide
-  image_path: /assets/images/study-guide-screenshot.png
-  link: https://github.com/schwarmau/study-guide
-  description: |-
-    I've created a <a href="/studyguide/index.html">study guide</a> for software engineering interviews, with some help from friends. It's primarily markdown compiled and built with the rust-made mdbook tool. I'm constantly updating it as I become more experienced, so keep an eye out!
-  tags:
-    - markdown
-    - git
 - id: flix
   title: Flix
   image_path: /assets/images/flix-screenshot.png
@@ -30,27 +21,6 @@
   tags:
     - go
     - python
-    - git
-- id: pleroma
-  title: Pleroma
-  image_path: /assets/images/pleroma-screenshot.png
-  link: https://github.com/schwarmau/pleroma
-  description: |-
-    Pleroma is a server and frontend for <a href="https://the-federation.info/">The Federation</a> (you may already be familiar with an alternative project known as Mastodon). I have started creating a dockerfile to containerize it, and I am redesigning the frontend to my liking. Eventually the final product will be deployed and available at pleroma.cyborg.cafe!
-  tags:
-    - elixir
-    - postgresSQL
-    - git
-- id: blazor-extensions
-  title: Blazor Extensions
-  image_path: /assets/images/blazor-screenshot.png
-  link: https://github.com/schwarmau
-  description: |-
-    These are a series of 3 extensions for <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a>. <a href="https://github.com/schwarmau/Blazor.Redux">One</a> to implement redux, <a href="https://github.com/schwarmau/Blazor.Canvas">one</a> to wrap the HTML5 canvas API, and <a href="https://github.com/schwarmau/Blazor.Storage">one</a> to wrap the browser storage API. These have since been abandoned because I don't have the capacity to maintain them, and old alternatives have gotten better in addition to new alternatives popping up.
-  tags:
-    - C#
-    - ASP.NET
-    - blazor
     - git
 - id: winery-passport
   title: Winery Passport
@@ -70,3 +40,12 @@
     One of my first big projects in college was to create an app with a classmate to accept user input about restaurant preferences and present a list of restaurants nearby that fit the criteria using Google Maps APIs. 
   tags:
     - javascript
+- id: study-guide
+  title: Study Guide
+  image_path: /assets/images/study-guide-screenshot.png
+  link: https://github.com/schwarmau/study-guide
+  description: |-
+    I've created a <a href="/studyguide/index.html">study guide</a> for software engineering interviews, with some help from friends. It's primarily markdown compiled and built with the rust-made mdbook tool. I'm constantly updating it as I become more experienced, so keep an eye out!
+  tags:
+    - markdown
+    - git

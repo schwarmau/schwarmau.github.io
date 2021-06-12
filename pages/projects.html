@@ -1,11 +1,15 @@
 ---
-permalink: /portfolio/
+permalink: /projects/
 layout: default
-title: Austin Schwarm | Portfolio
+title: Austin Schwarm | Projects
 ---
 
 <!-- TODO: I want to make this a grid layout on small screens. -->
 <div id="portfolio-container">
+    <div>
+        Here are some of the projects I've been involved in outside of work. To see more of my contributions you can check out my github!
+    </div>
+
     {% assign alignment = "right" %}
     {% for item in site.data.portfolio-projects %}
         <div class="portfolio-project-wrapper {{ alignment }}-aligned">
